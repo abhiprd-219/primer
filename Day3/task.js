@@ -1,3 +1,9 @@
+  // Using prompt to get user input in a browser environment
+// const userInput = prompt("Please enter an integer:");
+// const userNumber = parseInt(userInput);
+
+
+
 function factorial(n) {
     if (n === 0 || n === 1) {
       return 1;
@@ -5,7 +11,8 @@ function factorial(n) {
       return n * factorial(n - 1);
     }
   }
-  
+
+
   // Specify the number for which you want to calculate the factorial
   const number = 5;
   
