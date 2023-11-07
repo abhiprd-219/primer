@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Example</title>
+</head>
+<body>
+    <p id="displayText">HI</p>
+    <button id="helloButton" onclick="changeText('Hello')">Hello</button>
+    <button id="byeButton" onclick="changeText('BYE')">BYE</button>
+
+    <script>
+        function changeText(newText) {
+            var displayText = document.getElementById('displayText');
+            displayText.textContent = newText;
+        }
+    </script>
+</body>
+</html>
+

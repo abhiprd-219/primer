@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Increment</title>
+</head>
+<body>
+    <h1>Increment Example</h1>
+    <p>Value: <span id="counter">0</span></p>
+    <button id="incrementButton">Increment</button>
+    <button id="incrementButton2" onclick="incrementValue()">Increment</button>
+
+    <script>
+        // Get the button and counter elements by their IDs
+        const incrementButton = document.getElementById('incrementButton');
+        const counter = document.getElementById('counter');
+
+        // Initialize a variable to keep track of the value
+        let value = 0;
+
+        // Add a click event listener to the button
+        incrementButton.addEventListener('click', () => {
+            value++; // Increment the value
+            counter.textContent = value; // Update the displayed value
+        });
+
+function incrementValue() {
+    value++; // Increment the value
+    document.getElementById('counter').textContent = value; // Update the displayed value
+}
+    </script>
+</body>
+</html>
