@@ -19,10 +19,7 @@ function pClickedwithListener(){
 
     p2.innerHTML = "BYE";
     p2.style.color = "red";
-
-
-    
-    console.log("Bye");
+    console.log("Bye was earlier Hello");
 }
 
 p2.addEventListener('click',pClickedwithListener);
